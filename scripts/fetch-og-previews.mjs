@@ -282,7 +282,7 @@ async function main() {
   }
 
   if (!targets.length) {
-    console.log('All sites already have preview files. Use --force to re-download.');
+    console.log('All sites already have preview files. Use `make previews-force` or node ... --force');
     return;
   }
 

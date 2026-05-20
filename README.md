@@ -22,8 +22,14 @@ make previews # download OG images into assets/previews/ (requires network)
 Each site can set `"preview": "assets/previews/<id>.jpg"`. To pull Open Graph images from live sites:
 
 ```bash
-make previews        # only sites missing a preview file
-make previews-force  # re-download all
+make previews              # only sites missing a preview file (OG/meta)
+make previews-retry        # missing sites + screenshot + favicon fallbacks
+make previews-force        # re-download every preview (with fallbacks)
+make previews RETRY=1      # same as previews-retry
+make previews FORCE=1      # same as previews-force
+
+# `make previews --retry` and `make previews --force` do NOT work — flags go to Make, not the script.
+node scripts/fetch-og-previews.mjs --force --retry
 node scripts/fetch-og-previews.mjs --id=convex
 ```
 

@@ -38,7 +38,7 @@
       ],
       "accent": "#a78bfa",
       "featuredOnHub": false,
-      "preview": "assets/previews/mp3-juices.gif"
+      "preview": "assets/previews/mp3-juices.jpg"
     },
     {
       "id": "anyflip",
@@ -92,7 +92,7 @@
       ],
       "accent": "#e879f9",
       "featuredOnHub": false,
-      "preview": "assets/previews/text-studio.gif"
+      "preview": "assets/previews/text-studio.jpg"
     },
     {
       "id": "canva",
@@ -120,7 +120,7 @@
       ],
       "accent": "#60a5fa",
       "featuredOnHub": false,
-      "preview": "assets/previews/adobe-lightroom.jpg"
+      "preview": "assets/previews/adobe-lightroom.png"
     },
     {
       "id": "remove-background",
@@ -172,7 +172,7 @@
       ],
       "accent": "#fbbf24",
       "featuredOnHub": false,
-      "preview": "assets/previews/borderize.gif"
+      "preview": "assets/previews/borderize.jpg"
     },
     {
       "id": "tinypng",
@@ -264,7 +264,7 @@
       ],
       "accent": "#818cf8",
       "featuredOnHub": false,
-      "preview": "assets/previews/wallpaper-access.gif"
+      "preview": "assets/previews/wallpaper-access.jpg"
     },
     {
       "id": "wallpaper-cave",
@@ -292,7 +292,7 @@
       ],
       "accent": "#f97316",
       "featuredOnHub": false,
-      "preview": "assets/previews/dark-souls-text-generator.gif"
+      "preview": "assets/previews/dark-souls-text-generator.jpg"
     },
     {
       "id": "solid-color-generator",
@@ -305,7 +305,7 @@
       ],
       "accent": "#22d3ee",
       "featuredOnHub": false,
-      "preview": "assets/previews/solid-color-generator.gif"
+      "preview": "assets/previews/solid-color-generator.jpg"
     },
     {
       "id": "tree-generator",
@@ -358,7 +358,7 @@
       ],
       "accent": "#38bdf8",
       "featuredOnHub": false,
-      "preview": "assets/previews/loading-io.gif"
+      "preview": "assets/previews/loading-io.jpg"
     },
     {
       "id": "freeicons",
@@ -425,7 +425,7 @@
       ],
       "accent": "#a78bfa",
       "featuredOnHub": false,
-      "preview": "assets/previews/opengraph-preview.gif"
+      "preview": "assets/previews/opengraph-preview.jpg"
     },
     {
       "id": "capitalize-my-title",
@@ -439,7 +439,7 @@
       ],
       "accent": "#fbbf24",
       "featuredOnHub": false,
-      "preview": "assets/previews/capitalize-my-title.gif"
+      "preview": "assets/previews/capitalize-my-title.jpg"
     },
     {
       "id": "suno-ai",
@@ -492,7 +492,7 @@
       ],
       "accent": "#fb923c",
       "featuredOnHub": false,
-      "preview": "assets/previews/what-the-commit.gif"
+      "preview": "assets/previews/what-the-commit.jpg"
     },
     {
       "id": "tldr-pages",
@@ -520,7 +520,7 @@
       ],
       "accent": "#e879f9",
       "featuredOnHub": false,
-      "preview": "assets/previews/cheat-sh.gif"
+      "preview": "assets/previews/cheat-sh.jpg"
     },
     {
       "id": "dxomark",
@@ -599,7 +599,7 @@
         "architecture"
       ],
       "accent": "#f97316",
-      "preview": "assets/previews/drawio.svg",
+      "preview": "assets/previews/drawio.png",
       "featuredOnHub": true
     },
     {
@@ -655,7 +655,7 @@
         "sqlite"
       ],
       "accent": "#a78bfa",
-      "preview": "assets/previews/sqlitebrowser.svg",
+      "preview": "assets/previews/sqlitebrowser.jpg",
       "featuredOnHub": false
     },
     {
@@ -669,7 +669,7 @@
         "webhooks"
       ],
       "accent": "#22d3ee",
-      "preview": "assets/previews/ngrok.svg",
+      "preview": "assets/previews/ngrok.png",
       "featuredOnHub": true
     }
   ]
