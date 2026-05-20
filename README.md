@@ -33,6 +33,13 @@ node scripts/fetch-og-previews.mjs --force --retry
 node scripts/fetch-og-previews.mjs --id=convex
 ```
 
+Previews are stored as **512×512 square JPEG** (`assets/previews/<id>.jpg`). To normalize existing files:
+
+```bash
+npm install   # once — installs sharp
+make normalize-previews
+```
+
 Then run `make api` and commit `assets/previews/` with the data changes.
 
 After editing data, run `make api` and commit the generated `api/v1/` files for GitHub Pages.

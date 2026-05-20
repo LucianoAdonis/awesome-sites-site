@@ -11,6 +11,11 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import {
+  normalizePreviewFile,
+  previewRelPath,
+  removeSiblingPreviews,
+} from './preview-normalize.mjs';
 
 const root = path.join(path.dirname(fileURLToPath(import.meta.url)), '..');
 const sitesPath = path.join(root, 'data/sites.json');
@@ -166,7 +171,7 @@ function discoverCandidates(html, site) {
   if (retry) {
     // SECURITY-REVIEW: screenshot/favicon URLs derived only from catalog site.url
     fallbacks.push(
-      `https://s0.wp.com/mshots/v1/${encodeURIComponent(site.url)}?w=440&h=280`,
+      `https://s0.wp.com/mshots/v1/${encodeURIComponent(site.url)}?w=512&h=512`,
       `https://www.google.com/s2/favicons?domain=${encodeURIComponent(host)}&sz=256`
     );
   }
@@ -236,27 +241,26 @@ async function processSite(site) {
   }
 
   const errors = [];
+  const rel = previewRelPath(site.id);
+  const destAbs = path.join(root, rel);
+  const tmpAbs = path.join(previewsDir, `${site.id}.fetch.tmp`);
+
   for (const imageUrl of candidates) {
-    const ext = extFromUrl(imageUrl, '');
-    const rel = `assets/previews/${site.id}${ext}`;
-    const abs = path.join(root, rel);
     try {
-      const contentType = await downloadImage(imageUrl, abs);
-      const finalExt = extFromUrl(imageUrl, contentType);
-      let finalRel = rel;
-      if (finalExt !== ext) {
-        const finalAbs = path.join(root, `assets/previews/${site.id}${finalExt}`);
-        if (finalAbs !== abs && fs.existsSync(abs)) {
-          fs.renameSync(abs, finalAbs);
-          finalRel = `assets/previews/${site.id}${finalExt}`;
-        }
-      }
-      site.preview = finalRel;
-      const via = imageUrl.includes('mshots') ? 'screenshot' : imageUrl.includes('favicons') ? 'favicon' : 'og/meta';
-      return { id: site.id, status: 'ok', preview: finalRel, reason: via };
+      await downloadImage(imageUrl, tmpAbs);
+      await normalizePreviewFile(tmpAbs, destAbs);
+      if (fs.existsSync(tmpAbs)) fs.unlinkSync(tmpAbs);
+      removeSiblingPreviews(previewsDir, site.id, destAbs);
+      site.preview = rel;
+      const via = imageUrl.includes('mshots')
+        ? 'screenshot'
+        : imageUrl.includes('favicons')
+          ? 'favicon'
+          : 'og/meta';
+      return { id: site.id, status: 'ok', preview: rel, reason: `${via} → 512×512` };
     } catch (err) {
       errors.push(err.message);
-      if (fs.existsSync(abs)) fs.unlinkSync(abs);
+      if (fs.existsSync(tmpAbs)) fs.unlinkSync(tmpAbs);
     }
   }
 

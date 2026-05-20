@@ -83,7 +83,7 @@ Awesome Sites is a bookmark shelf for external tools, not a marketing landing pa
 The system inherits the Neorgon hub shell (violet header gradient, dark ink body, amber accent) but refuses the generic "AI catalog" patterns: no uniform icon grids, no neon hover halos, no dashed placeholder cards, no "EXTERNAL" badges on every row. Depth comes from elevated surfaces and a single hover lift, not glass blur or gradient text.
 
 **Key Characteristics:**
-- Preview-led horizontal rows (220px thumbnail + copy), inspired by Team Play resource cards
+- Preview-led horizontal rows (160px square 1:1 thumbnail + copy), inspired by Team Play resource cards
 - Committed amber accent on filters, kicker, links, and hub badges only
 - OKLCH-tinted neutrals on a violet-ink night background
 - Sidebar list navigation on desktop; wrapped pills on mobile
@@ -167,7 +167,7 @@ Depth is conveyed by:
 - **Count:** Muted small text, right-aligned on desktop
 
 ### Site row (signature component)
-- **Layout:** CSS grid `220px 1fr`, min-height 148px; stacks preview above body under 600px
+- **Layout:** CSS grid `160px 1fr` (square preview column); stacks full-width 1:1 preview above body under 600px
 - **Preview:** `object-fit: cover`, min-height 148px; fallback panel if image fails
 - **Body:** 18px 20px padding; meta row (domain + optional "On hub" chip), title, 2-line clamped description, label tags
 - **Hover:** Border strongens, -2px Y, shadow lift
@@ -186,7 +186,7 @@ Depth is conveyed by:
 ## Do's and Don'ts
 
 ### Do:
-- **Do** lead each external site with a preview image (`assets/previews/` PNG or SVG) and fall back to a neutral placeholder on error.
+- **Do** lead each external site with a square preview (`assets/previews/<id>.jpg`, 512×512 source) and fall back to a neutral placeholder on error.
 - **Do** use horizontal preview + copy rows for the main feed (Team Play resource-card pattern).
 - **Do** keep list filters in a sticky sidebar on viewports ≥820px.
 - **Do** use OKLCH for CSS custom properties; tint every neutral toward violet ink (chroma ~0.02).

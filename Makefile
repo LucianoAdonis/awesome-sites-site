@@ -10,6 +10,7 @@ help:
 	@echo "  make previews              Fetch missing previews (OG meta)"
 	@echo "  make previews-retry        Missing + screenshot/favicon fallbacks"
 	@echo "  make previews-force        Re-download all (with fallbacks)"
+	@echo "  make normalize-previews    Square 512×512 JPEG for every preview"
 	@echo "  make previews RETRY=1      Same as previews-retry"
 	@echo "  make previews FORCE=1      Same as previews-force"
 	@echo "  make kill     Stop server on port $(PORT)"
@@ -42,6 +43,10 @@ previews-retry:
 
 previews-force:
 	@$(MAKE) previews FORCE=1
+
+.PHONY: normalize-previews
+normalize-previews:
+	@node scripts/normalize-previews.mjs
 
 .PHONY: kill
 kill:

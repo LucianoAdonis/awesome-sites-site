@@ -52,7 +52,7 @@
       ],
       "accent": "#22d3ee",
       "featuredOnHub": false,
-      "preview": "assets/previews/anyflip.png"
+      "preview": "assets/previews/anyflip.jpg"
     },
     {
       "id": "color-hex",
@@ -78,7 +78,7 @@
       ],
       "accent": "#818cf8",
       "featuredOnHub": false,
-      "preview": "assets/previews/myfonts.png"
+      "preview": "assets/previews/myfonts.jpg"
     },
     {
       "id": "text-studio",
@@ -120,7 +120,7 @@
       ],
       "accent": "#60a5fa",
       "featuredOnHub": false,
-      "preview": "assets/previews/adobe-lightroom.png"
+      "preview": "assets/previews/adobe-lightroom.jpg"
     },
     {
       "id": "remove-background",
@@ -198,7 +198,7 @@
       ],
       "accent": "#f472b6",
       "featuredOnHub": false,
-      "preview": "assets/previews/bulk-resize-photos.png"
+      "preview": "assets/previews/bulk-resize-photos.jpg"
     },
     {
       "id": "autocropper",
@@ -211,7 +211,7 @@
       ],
       "accent": "#38bdf8",
       "featuredOnHub": false,
-      "preview": "assets/previews/autocropper.png"
+      "preview": "assets/previews/autocropper.jpg"
     },
     {
       "id": "iloveimg",
@@ -278,7 +278,7 @@
       ],
       "accent": "#a78bfa",
       "featuredOnHub": false,
-      "preview": "assets/previews/wallpaper-cave.png"
+      "preview": "assets/previews/wallpaper-cave.jpg"
     },
     {
       "id": "dark-souls-text-generator",
@@ -319,7 +319,7 @@
       ],
       "accent": "#4ade80",
       "featuredOnHub": false,
-      "preview": "assets/previews/tree-generator.png"
+      "preview": "assets/previews/tree-generator.jpg"
     },
     {
       "id": "giphy-capture",
@@ -332,7 +332,7 @@
       ],
       "accent": "#f472b6",
       "featuredOnHub": false,
-      "preview": "assets/previews/giphy-capture.gif"
+      "preview": "assets/previews/giphy-capture.jpg"
     },
     {
       "id": "ezgif",
@@ -345,7 +345,7 @@
       ],
       "accent": "#fb923c",
       "featuredOnHub": false,
-      "preview": "assets/previews/ezgif.png"
+      "preview": "assets/previews/ezgif.jpg"
     },
     {
       "id": "loading-io",
@@ -397,7 +397,7 @@
       ],
       "accent": "#818cf8",
       "featuredOnHub": false,
-      "preview": "assets/previews/app-icon-co.png"
+      "preview": "assets/previews/app-icon-co.jpg"
     },
     {
       "id": "metatags-io",
@@ -465,7 +465,7 @@
       ],
       "accent": "#22d3ee",
       "featuredOnHub": false,
-      "preview": "assets/previews/easeus-vocal-remover.webp"
+      "preview": "assets/previews/easeus-vocal-remover.jpg"
     },
     {
       "id": "hackertyper",
@@ -478,7 +478,7 @@
       ],
       "accent": "#4ade80",
       "featuredOnHub": false,
-      "preview": "assets/previews/hackertyper.png"
+      "preview": "assets/previews/hackertyper.jpg"
     },
     {
       "id": "what-the-commit",
@@ -506,7 +506,7 @@
       ],
       "accent": "#38bdf8",
       "featuredOnHub": false,
-      "preview": "assets/previews/tldr-pages.png"
+      "preview": "assets/previews/tldr-pages.jpg"
     },
     {
       "id": "cheat-sh",
@@ -572,7 +572,7 @@
         "collab"
       ],
       "accent": "#f472b6",
-      "preview": "assets/previews/excalidraw.png",
+      "preview": "assets/previews/excalidraw.jpg",
       "featuredOnHub": true
     },
     {
@@ -585,7 +585,7 @@
         "design"
       ],
       "accent": "#38bdf8",
-      "preview": "assets/previews/tldraw.png",
+      "preview": "assets/previews/tldraw.jpg",
       "featuredOnHub": true
     },
     {
@@ -599,7 +599,7 @@
         "architecture"
       ],
       "accent": "#f97316",
-      "preview": "assets/previews/drawio.png",
+      "preview": "assets/previews/drawio.jpg",
       "featuredOnHub": true
     },
     {
@@ -614,7 +614,7 @@
       ],
       "accent": "#f59e0b",
       "featuredOnHub": true,
-      "preview": "assets/previews/convex.png"
+      "preview": "assets/previews/convex.jpg"
     },
     {
       "id": "airtable",
@@ -642,7 +642,7 @@
       ],
       "accent": "#818cf8",
       "featuredOnHub": false,
-      "preview": "assets/previews/tailscale.png"
+      "preview": "assets/previews/tailscale.jpg"
     },
     {
       "id": "sqlitebrowser",
@@ -669,7 +669,7 @@
         "webhooks"
       ],
       "accent": "#22d3ee",
-      "preview": "assets/previews/ngrok.png",
+      "preview": "assets/previews/ngrok.jpg",
       "featuredOnHub": true
     }
   ]
