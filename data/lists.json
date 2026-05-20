@@ -1,0 +1,22 @@
+{
+  "lists": [
+    {
+      "id": "whiteboard",
+      "label": "Whiteboard",
+      "description": "Diagram and sketch tools that stay in the browser.",
+      "siteIds": ["excalidraw", "tldraw", "drawio"]
+    },
+    {
+      "id": "ops-random",
+      "label": "Ops shelf",
+      "description": "Things you open when production hiccups or local dev needs a tunnel.",
+      "siteIds": ["htop", "ngrok"]
+    },
+    {
+      "id": "data-peeks",
+      "label": "Data peeks",
+      "description": "Lightweight ways to inspect data without standing up a warehouse.",
+      "siteIds": ["sqlitebrowser", "drawio"]
+    }
+  ]
+}

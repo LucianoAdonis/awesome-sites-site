@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated": "2026-05-19",
+    "description": "Curated external services and shareable labeled lists for Awesome Sites.",
+    "endpoints": {
+      "sites": "https://awesomesites.neorgon.com/api/v1/sites.json",
+      "lists": "https://awesomesites.neorgon.com/api/v1/lists.json",
+      "catalog": "https://awesomesites.neorgon.com/api/v1/catalog.json"
+    }
+  },
+  "sites": [
+    {
+      "id": "excalidraw",
+      "name": "Excalidraw",
+      "url": "https://excalidraw.com/",
+      "description": "Hand-drawn style whiteboards in the browser. Fast enough for architecture sketches and incident diagrams.",
+      "labels": [
+        "design",
+        "whiteboard",
+        "collab"
+      ],
+      "accent": "#f472b6",
+      "preview": "assets/previews/excalidraw.png",
+      "featuredOnHub": true
+    },
+    {
+      "id": "tldraw",
+      "name": "tldraw",
+      "url": "https://www.tldraw.com/",
+      "description": "Minimal infinite canvas with multiplayer. Good when you want a board without installing anything.",
+      "labels": [
+        "design",
+        "whiteboard"
+      ],
+      "accent": "#38bdf8",
+      "preview": "assets/previews/tldraw.png",
+      "featuredOnHub": true
+    },
+    {
+      "id": "drawio",
+      "name": "draw.io",
+      "url": "https://app.diagrams.net/",
+      "description": "Diagrams.net in the browser or desktop. AWS/GCP/K8s stencils when you need proper boxes and arrows.",
+      "labels": [
+        "diagrams",
+        "architecture"
+      ],
+      "accent": "#f97316",
+      "preview": "assets/previews/drawio.svg",
+      "featuredOnHub": true
+    },
+    {
+      "id": "htop",
+      "name": "htop",
+      "url": "https://htop.dev/",
+      "description": "Interactive process viewer for Linux and macOS. The first thing to open when a box feels slow.",
+      "labels": [
+        "ops",
+        "cli",
+        "monitoring"
+      ],
+      "accent": "#4ade80",
+      "preview": "assets/previews/htop.svg",
+      "featuredOnHub": false
+    },
+    {
+      "id": "sqlitebrowser",
+      "name": "DB Browser for SQLite",
+      "url": "https://sqlitebrowser.org/",
+      "description": "Visual editor for SQLite files. Handy for local prototypes and quick data peeks.",
+      "labels": [
+        "data",
+        "sqlite",
+        "desktop"
+      ],
+      "accent": "#a78bfa",
+      "preview": "assets/previews/sqlitebrowser.svg",
+      "featuredOnHub": false
+    },
+    {
+      "id": "ngrok",
+      "name": "ngrok",
+      "url": "https://ngrok.com/",
+      "description": "Expose a local port to the internet with a public URL. Webhooks and mobile testing without VPN gymnastics.",
+      "labels": [
+        "dev",
+        "tunnel",
+        "webhooks"
+      ],
+      "accent": "#22d3ee",
+      "preview": "assets/previews/ngrok.svg",
+      "featuredOnHub": true
+    }
+  ]
+}
