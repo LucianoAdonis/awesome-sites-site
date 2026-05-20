@@ -21,7 +21,8 @@
         "edition"
       ],
       "accent": "#38bdf8",
-      "featuredOnHub": true
+      "featuredOnHub": true,
+      "preview": "assets/previews/capcut.jpg"
     },
     {
       "id": "davinci-resolve",
@@ -82,7 +83,8 @@
         "fonts"
       ],
       "accent": "#818cf8",
-      "featuredOnHub": false
+      "featuredOnHub": false,
+      "preview": "assets/previews/myfonts.png"
     },
     {
       "id": "text-studio",
@@ -121,7 +123,8 @@
         "photo"
       ],
       "accent": "#60a5fa",
-      "featuredOnHub": false
+      "featuredOnHub": false,
+      "preview": "assets/previews/adobe-lightroom.jpg"
     },
     {
       "id": "remove-background",
@@ -133,7 +136,8 @@
         "modification"
       ],
       "accent": "#4ade80",
-      "featuredOnHub": false
+      "featuredOnHub": false,
+      "preview": "assets/previews/remove-background.jpg"
     },
     {
       "id": "cleanup-pictures",
@@ -157,7 +161,8 @@
         "modification"
       ],
       "accent": "#a78bfa",
-      "featuredOnHub": false
+      "featuredOnHub": false,
+      "preview": "assets/previews/upscale-media.jpg"
     },
     {
       "id": "borderize",
@@ -181,7 +186,8 @@
         "modification"
       ],
       "accent": "#22d3ee",
-      "featuredOnHub": false
+      "featuredOnHub": false,
+      "preview": "assets/previews/tinypng.jpg"
     },
     {
       "id": "bulk-resize-photos",
@@ -193,7 +199,8 @@
         "modification"
       ],
       "accent": "#f472b6",
-      "featuredOnHub": false
+      "featuredOnHub": false,
+      "preview": "assets/previews/bulk-resize-photos.png"
     },
     {
       "id": "autocropper",
@@ -205,7 +212,8 @@
         "cutting"
       ],
       "accent": "#38bdf8",
-      "featuredOnHub": false
+      "featuredOnHub": false,
+      "preview": "assets/previews/autocropper.png"
     },
     {
       "id": "iloveimg",
@@ -217,7 +225,8 @@
         "cutting"
       ],
       "accent": "#e879f9",
-      "featuredOnHub": false
+      "featuredOnHub": false,
+      "preview": "assets/previews/iloveimg.jpg"
     },
     {
       "id": "photoaid",
@@ -229,7 +238,8 @@
         "cutting"
       ],
       "accent": "#4ade80",
-      "featuredOnHub": false
+      "featuredOnHub": false,
+      "preview": "assets/previews/photoaid.jpg"
     },
     {
       "id": "unsplash",
@@ -317,7 +327,8 @@
         "gif"
       ],
       "accent": "#f472b6",
-      "featuredOnHub": false
+      "featuredOnHub": false,
+      "preview": "assets/previews/giphy-capture.gif"
     },
     {
       "id": "ezgif",
@@ -329,7 +340,8 @@
         "gif"
       ],
       "accent": "#fb923c",
-      "featuredOnHub": false
+      "featuredOnHub": false,
+      "preview": "assets/previews/ezgif.png"
     },
     {
       "id": "loading-io",
@@ -377,7 +389,8 @@
         "gif"
       ],
       "accent": "#818cf8",
-      "featuredOnHub": false
+      "featuredOnHub": false,
+      "preview": "assets/previews/app-icon-co.png"
     },
     {
       "id": "metatags-io",
@@ -390,7 +403,8 @@
         "meta"
       ],
       "accent": "#60a5fa",
-      "featuredOnHub": false
+      "featuredOnHub": false,
+      "preview": "assets/previews/metatags-io.jpg"
     },
     {
       "id": "opengraph-preview",
@@ -428,7 +442,8 @@
         "ai"
       ],
       "accent": "#f472b6",
-      "featuredOnHub": true
+      "featuredOnHub": true,
+      "preview": "assets/previews/suno-ai.jpg"
     },
     {
       "id": "easeus-vocal-remover",
@@ -440,7 +455,8 @@
         "audio"
       ],
       "accent": "#22d3ee",
-      "featuredOnHub": false
+      "featuredOnHub": false,
+      "preview": "assets/previews/easeus-vocal-remover.webp"
     },
     {
       "id": "hackertyper",
@@ -503,7 +519,8 @@
         "reviews"
       ],
       "accent": "#f97316",
-      "featuredOnHub": false
+      "featuredOnHub": false,
+      "preview": "assets/previews/dxomark.jpg"
     },
     {
       "id": "fragrantica",
@@ -515,7 +532,8 @@
         "reviews"
       ],
       "accent": "#a78bfa",
-      "featuredOnHub": false
+      "featuredOnHub": false,
+      "preview": "assets/previews/fragrantica.jpg"
     },
     {
       "id": "rtings",
@@ -527,7 +545,8 @@
         "reviews"
       ],
       "accent": "#34d399",
-      "featuredOnHub": false
+      "featuredOnHub": false,
+      "preview": "assets/previews/rtings.jpg"
     },
     {
       "id": "excalidraw",
@@ -571,18 +590,46 @@
       "featuredOnHub": true
     },
     {
-      "id": "htop",
-      "name": "htop",
-      "url": "https://htop.dev/",
-      "description": "Interactive process viewer for Linux and macOS. Open it first when a machine feels slow.",
+      "id": "convex",
+      "name": "Convex",
+      "url": "https://www.convex.dev/",
+      "description": "TypeScript backend with realtime sync, auth, and server functions—no separate API layer to wire up.",
       "labels": [
-        "dev",
-        "ops",
-        "cli"
+        "devops",
+        "backend",
+        "database"
       ],
-      "accent": "#4ade80",
-      "preview": "assets/previews/htop.svg",
-      "featuredOnHub": false
+      "accent": "#f59e0b",
+      "featuredOnHub": true,
+      "preview": "assets/previews/convex.png"
+    },
+    {
+      "id": "airtable",
+      "name": "Airtable",
+      "url": "https://www.airtable.com/",
+      "description": "Spreadsheet-style bases with views, automations, and interfaces for ops and content teams.",
+      "labels": [
+        "devops",
+        "database",
+        "workflow"
+      ],
+      "accent": "#38bdf8",
+      "featuredOnHub": false,
+      "preview": "assets/previews/airtable.jpg"
+    },
+    {
+      "id": "tailscale",
+      "name": "Tailscale",
+      "url": "https://tailscale.com/",
+      "description": "WireGuard-based mesh VPN for secure access to homelab, cloud, and office resources without legacy VPN pain.",
+      "labels": [
+        "devops",
+        "network",
+        "security"
+      ],
+      "accent": "#818cf8",
+      "featuredOnHub": false,
+      "preview": "assets/previews/tailscale.png"
     },
     {
       "id": "sqlitebrowser",
@@ -590,7 +637,7 @@
       "url": "https://sqlitebrowser.org/",
       "description": "Visual editor for SQLite files. Handy for local prototypes and quick data peeks.",
       "labels": [
-        "dev",
+        "devops",
         "data",
         "sqlite"
       ],
@@ -604,7 +651,7 @@
       "url": "https://ngrok.com/",
       "description": "Expose a local port with a public URL. Webhooks and mobile testing without VPN gymnastics.",
       "labels": [
-        "dev",
+        "devops",
         "tunnel",
         "webhooks"
       ],
@@ -760,11 +807,13 @@
       ]
     },
     {
-      "id": "dev-ops",
-      "label": "Dev & ops",
-      "description": "Process viewers, SQLite peeks, and local tunnels.",
+      "id": "devops",
+      "label": "DevOps",
+      "description": "Backends, data tools, mesh VPN, and tunnels for shipping and operating software.",
       "siteIds": [
-        "htop",
+        "convex",
+        "airtable",
+        "tailscale",
         "sqlitebrowser",
         "ngrok"
       ]
@@ -783,6 +832,7 @@
       "excalidraw",
       "tldraw",
       "drawio",
+      "convex",
       "ngrok"
     ]
   }

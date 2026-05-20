@@ -9,12 +9,25 @@ Curated external sites with labeled lists — the tabs you leave open. Static JS
 ```bash
 make serve   # http://localhost:8831 (CORS enabled for hub dev)
 make api     # regenerate api/v1/*.json from data/
+make previews # download OG images into assets/previews/ (requires network)
 ```
 
 ## Data
 
 - `data/sites.json` — site entries (`id`, `name`, `url`, `description`, `labels`, `accent`, `featuredOnHub`)
-- `data/lists.json` — curated lists (`id`, `label`, `description`, `siteIds`). Current lists: Video, Colors & fonts, Image edition/modification/cutting, Image & text content, Icons & GIFs, Sites, Music, Random (fun/dev/reviews), plus Whiteboard and Dev & ops.
+- `data/lists.json` — curated lists (`id`, `label`, `description`, `siteIds`). Current lists: Video, Colors & fonts, Image edition/modification/cutting, Image & text content, Icons & GIFs, Sites, Music, Random (fun/dev/reviews), plus Whiteboard and DevOps.
+
+### Preview images
+
+Each site can set `"preview": "assets/previews/<id>.jpg"`. To pull Open Graph images from live sites:
+
+```bash
+make previews        # only sites missing a preview file
+make previews-force  # re-download all
+node scripts/fetch-og-previews.mjs --id=convex
+```
+
+Then run `make api` and commit `assets/previews/` with the data changes.
 
 After editing data, run `make api` and commit the generated `api/v1/` files for GitHub Pages.
 

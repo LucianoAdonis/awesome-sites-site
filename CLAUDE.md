@@ -13,6 +13,7 @@ Modular ES modules, no build step.
 |------|------|
 | `data/sites.json`, `data/lists.json` | Source of truth |
 | `scripts/build-api.mjs` | Writes `api/v1/*.json` including `catalog.json` |
+| `scripts/fetch-og-previews.mjs` | Downloads `og:image` into `assets/previews/` (`make previews`) |
 | `js/app.js` | Entry |
 | `js/data.js` | Loads catalog, filters |
 | `js/render.js` | List pills + site cards |
@@ -39,5 +40,6 @@ Hub consumer: `neorgon-site/js/awesome-sites-hub.js` (cards use `data-card-id="a
 ## Workflow
 
 1. Edit `data/sites.json` or `data/lists.json`
-2. `make api`
-3. Test with `make serve` and hub on port 8800
+2. `make previews` (optional) to pull OG images for new sites
+3. `make api`
+4. Test with `make serve` and hub on port 8800

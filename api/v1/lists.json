@@ -156,11 +156,13 @@
       ]
     },
     {
-      "id": "dev-ops",
-      "label": "Dev & ops",
-      "description": "Process viewers, SQLite peeks, and local tunnels.",
+      "id": "devops",
+      "label": "DevOps",
+      "description": "Backends, data tools, mesh VPN, and tunnels for shipping and operating software.",
       "siteIds": [
-        "htop",
+        "convex",
+        "airtable",
+        "tailscale",
         "sqlitebrowser",
         "ngrok"
       ]
