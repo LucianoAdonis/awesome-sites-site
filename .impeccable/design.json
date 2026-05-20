@@ -1,0 +1,133 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-05-19T00:00:00.000Z",
+  "title": "Design System: Awesome Sites",
+  "extensions": {
+    "colorMeta": {
+      "ink-night": {
+        "role": "neutral",
+        "displayName": "Ink Night",
+        "canonical": "oklch(0.12 0.02 280)",
+        "tonalRamp": ["#030408", "#05070c", "#070a12", "#0a0c12", "#0e1118", "#12151c", "#181b24", "#1e222c"]
+      },
+      "signal-amber": {
+        "role": "primary",
+        "displayName": "Signal Amber",
+        "canonical": "oklch(0.72 0.17 45)",
+        "tonalRamp": ["#431407", "#7c2d12", "#c2410c", "#ea580c", "#f97316", "#fb923c", "#fdba74", "#fed7aa"]
+      },
+      "text-primary": {
+        "role": "neutral",
+        "displayName": "Primary Text",
+        "canonical": "oklch(0.97 0.01 280)",
+        "tonalRamp": ["#3f3f46", "#71717a", "#a1a1aa", "#d4d4d8", "#e4e4e7", "#f4f4f5", "#f7f7f9", "#fafafa"]
+      }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Header Title", "purpose": "Product name in Neorgon header bar only." },
+      "title": { "displayName": "Site Title", "purpose": "External site name on each catalog row." },
+      "body": { "displayName": "Body", "purpose": "Intro, descriptions, API notes." },
+      "label": { "displayName": "Label", "purpose": "Sidebar section labels and hub badge." }
+    },
+    "shadows": [
+      {
+        "name": "row-hover",
+        "value": "0 12px 32px oklch(0 0 0 / 0.35)",
+        "purpose": "Site row lift on hover only."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-out",
+        "value": "cubic-bezier(0.22, 1, 0.36, 1)",
+        "purpose": "Default easing for row hover and pill transitions."
+      },
+      {
+        "name": "logo-spring",
+        "value": "cubic-bezier(0.34, 1.56, 0.64, 1)",
+        "purpose": "Neorgon header logo hover scale."
+      }
+    ],
+    "breakpoints": [
+      { "name": "catalog-stack", "value": "820px" },
+      { "name": "row-stack", "value": "600px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "List pill",
+      "kind": "chip",
+      "refersTo": "list-pill",
+      "description": "Sidebar or wrapped filter for curated lists.",
+      "html": "<button type=\"button\" class=\"ds-list-pill\">All sites</button>",
+      "css": ".ds-list-pill { width: 100%; text-align: left; border: 1px solid transparent; background: transparent; color: #c4c6cf; font-family: 'Avenir Next', -apple-system, sans-serif; font-size: 0.88rem; font-weight: 500; padding: 10px 12px; border-radius: 8px; cursor: pointer; transition: background 0.18s cubic-bezier(0.22, 1, 0.36, 1), color 0.18s cubic-bezier(0.22, 1, 0.36, 1); } .ds-list-pill:hover { background: oklch(0.2 0.015 280 / 0.55); color: #f7f7f9; } .ds-list-pill:focus-visible { outline: 2px solid #f97316; outline-offset: 2px; }"
+    },
+    {
+      "name": "List pill active",
+      "kind": "chip",
+      "refersTo": "list-pill-active",
+      "description": "Selected list filter state.",
+      "html": "<button type=\"button\" class=\"ds-list-pill ds-list-pill--active\">Whiteboard</button>",
+      "css": ".ds-list-pill--active { background: oklch(0.72 0.17 45 / 0.14); border-color: oklch(0.72 0.17 45 / 0.35); color: #f7f7f9; font-weight: 600; }"
+    },
+    {
+      "name": "Ghost button",
+      "kind": "button",
+      "refersTo": "btn-ghost",
+      "description": "Clear search and secondary toolbar actions.",
+      "html": "<button type=\"button\" class=\"ds-btn-ghost\">Clear</button>",
+      "css": ".ds-btn-ghost { border: 1px solid #ffffff1a; background: transparent; color: #c4c6cf; font-family: 'Avenir Next', -apple-system, sans-serif; font-size: 0.88rem; font-weight: 500; padding: 10px 14px; border-radius: 8px; cursor: pointer; transition: background 0.18s cubic-bezier(0.22, 1, 0.36, 1), color 0.18s cubic-bezier(0.22, 1, 0.36, 1); } .ds-btn-ghost:hover { background: oklch(0.2 0.015 280 / 0.55); color: #f7f7f9; } .ds-btn-ghost:focus-visible { outline: 2px solid #f97316; outline-offset: 2px; }"
+    },
+    {
+      "name": "Site row",
+      "kind": "card",
+      "refersTo": "site-row",
+      "description": "Primary catalog entry: preview column + metadata body.",
+      "html": "<a href=\"#\" class=\"ds-site-row\"><div class=\"ds-site-row__preview\"><img src=\"\" alt=\"\" width=\"220\" height=\"148\" /></div><div class=\"ds-site-row__body\"><div class=\"ds-site-row__meta\"><span class=\"ds-site-row__domain\">example.com</span><span class=\"ds-site-row__hub\">On hub</span></div><h2 class=\"ds-site-row__name\">Example Tool</h2><p class=\"ds-site-row__desc\">Short reason to keep this tab open.</p><div class=\"ds-site-row__tags\"><span class=\"ds-site-row__tag\">whiteboard</span></div></div></a>",
+      "css": ".ds-site-row { display: grid; grid-template-columns: 220px 1fr; min-height: 148px; background: #12151c; border: 1px solid #ffffff1a; border-radius: 14px; overflow: hidden; text-decoration: none; color: #f7f7f9; transition: border-color 0.2s cubic-bezier(0.22, 1, 0.36, 1), transform 0.2s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.2s cubic-bezier(0.22, 1, 0.36, 1); } .ds-site-row:hover { border-color: #ffffff29; transform: translateY(-2px); box-shadow: 0 12px 32px oklch(0 0 0 / 0.35); } .ds-site-row:focus-visible { outline: 2px solid #f97316; outline-offset: 2px; } .ds-site-row__preview { background: oklch(0.14 0.02 280); overflow: hidden; } .ds-site-row__preview img { width: 100%; height: 100%; object-fit: cover; min-height: 148px; display: block; } .ds-site-row__body { padding: 18px 20px; display: flex; flex-direction: column; justify-content: center; gap: 8px; } .ds-site-row__domain { font-size: 0.78rem; color: #8e9099; } .ds-site-row__hub { font-size: 0.65rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: #f97316; background: oklch(0.72 0.17 45 / 0.14); padding: 2px 7px; border-radius: 4px; } .ds-site-row__name { font-size: 1.15rem; font-weight: 700; line-height: 1.25; letter-spacing: -0.02em; margin: 0; } .ds-site-row__desc { font-size: 0.9rem; line-height: 1.55; color: #c4c6cf; margin: 0; } .ds-site-row__tag { font-size: 0.68rem; font-weight: 600; padding: 3px 8px; border-radius: 5px; background: oklch(0.25 0.02 280 / 0.6); color: #8e9099; }"
+    },
+    {
+      "name": "Search field",
+      "kind": "input",
+      "refersTo": "search-field",
+      "description": "Toolbar search with icon and glass surface.",
+      "html": "<label class=\"ds-search\"><span class=\"ds-search__icon\" aria-hidden=\"true\">⌕</span><input type=\"search\" class=\"ds-search__input\" placeholder=\"Filter by name, domain, or label…\" /></label>",
+      "css": ".ds-search { display: flex; align-items: center; gap: 10px; flex: 1; min-width: 0; padding: 0 14px; height: 44px; background: oklch(0.2 0.015 280 / 0.55); border: 1px solid #ffffff1a; border-radius: 12px; } .ds-search__input { flex: 1; border: none; background: transparent; color: #f7f7f9; font-family: 'Avenir Next', -apple-system, sans-serif; font-size: 0.95rem; outline: none; } .ds-search__input::placeholder { color: #8e9099; } .ds-search:focus-within { border-color: #ffffff29; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Open Tab Shelf",
+    "overview": "Awesome Sites is a bookmark shelf for external tools, not a marketing landing page. Preview-first horizontal rows, sidebar list filters, and a restrained amber accent on the Neorgon dark shell. Depth from elevated surfaces and a single hover lift — not glass cards or gradient glows.",
+    "keyCharacteristics": [
+      "Preview-led horizontal rows (220px thumbnail + copy)",
+      "Committed amber accent on filters, kicker, links, and hub badges only",
+      "OKLCH-tinted neutrals on violet-ink night background",
+      "Sidebar list navigation on desktop; wrapped pills on mobile",
+      "API/editor notes in collapsed details panel"
+    ],
+    "rules": [
+      { "name": "The Preview Carries Color Rule", "body": "Per-site accent colors from JSON are not painted across entire cards. Visual interest comes from screenshot or SVG previews.", "section": "colors" },
+      { "name": "The Amber Budget Rule", "body": "Signal amber appears on selection state, metadata kicker, hub chip, and links. It never fills large background areas except the soft active pill wash.", "section": "colors" },
+      { "name": "The Domain Stays Quiet Rule", "body": "Domain names use muted 0.78rem tabular numerals. Never uppercase accent treatment.", "section": "typography" },
+      { "name": "The Flat-By-Default Rule", "body": "Site rows have no glow pseudo-elements, no dashed borders, and no gradient overlays. Motion and shadow appear only on hover or focus.", "section": "elevation" }
+    ],
+    "dos": [
+      "Do lead each external site with a preview image and fall back to a neutral placeholder on error.",
+      "Do use horizontal preview + copy rows for the main feed.",
+      "Do keep list filters in a sticky sidebar on viewports ≥820px.",
+      "Do use OKLCH for CSS custom properties; tint neutrals toward violet ink.",
+      "Do limit amber accent to selection, links, kicker, and hub metadata.",
+      "Do collapse editor/API documentation into the bottom details panel."
+    ],
+    "donts": [
+      "Don't use identical auto-fill card grids with icon + heading + blurb repeats.",
+      "Don't add dashed borders, gradient ::before glows, or per-card neon halos.",
+      "Don't put EXTERNAL or letter-avatar badges on every row.",
+      "Don't use glassmorphism on catalog surfaces (header blur is Neorgon-standard only).",
+      "Don't use gradient text, hero metric blocks, or uppercase shouting domains.",
+      "Don't use colored left-border stripes greater than 1px on rows or callouts.",
+      "Don't park make api / data/sites.json instructions in the main intro.",
+      "Don't animate layout properties; only border-color, transform, and box-shadow on rows."
+    ]
+  }
+}

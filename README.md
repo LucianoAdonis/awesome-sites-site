@@ -14,7 +14,7 @@ make api     # regenerate api/v1/*.json from data/
 ## Data
 
 - `data/sites.json` — site entries (`id`, `name`, `url`, `description`, `labels`, `accent`, `featuredOnHub`)
-- `data/lists.json` — curated lists (`id`, `label`, `description`, `siteIds`)
+- `data/lists.json` — curated lists (`id`, `label`, `description`, `siteIds`). Current lists: Video, Colors & fonts, Image edition/modification/cutting, Image & text content, Icons & GIFs, Sites, Music, Random (fun/dev/reviews), plus Whiteboard and Dev & ops.
 
 After editing data, run `make api` and commit the generated `api/v1/` files for GitHub Pages.
 

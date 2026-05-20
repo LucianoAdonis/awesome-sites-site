@@ -2,7 +2,7 @@
 
 ## Purpose
 
-A lightweight catalog of external sites worth keeping open — whiteboards, ops utilities, data tools, and misc tabs — organized with **curated labels/lists** instead of a rigid taxonomy.
+A lightweight catalog of **edition and content tools** — video, colors, image work, stock assets, icons, music, meta/SEO helpers, and misc tabs — organized with **curated lists** instead of a rigid taxonomy.
 
 ## Decisions
 
