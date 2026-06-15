@@ -4,14 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Awesome Sites | Curated links you leave open</title>
-  <meta name="description" content="Edition and content tools — video, images, fonts, GIFs, music, and handy sites for memes and publishing. JSON API for the Neorgon hub">
-  <meta property="og:title" content="Awesome Sites — Curated links you leave open">
+  <meta name="description" content="Edition and content tools: video, images, fonts, GIFs, music, and handy sites for memes and publishing. JSON API for the Neorgon hub">
+  <meta property="og:title" content="Awesome Sites: Curated links you leave open">
   <meta property="og:description" content="Labeled lists of external sites worth keeping in a tab. Browse on the web or pull cards from the JSON API">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://awesomesites.neorgon.com/">
   <meta property="og:site_name" content="Neorgon">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Awesome Sites — Curated links you leave open">
+  <meta name="twitter:title" content="Awesome Sites: Curated links you leave open">
   <meta name="twitter:description" content="Labeled lists of external sites worth keeping in a tab">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://awesomesites.neorgon.com/">
@@ -62,7 +62,7 @@
     <div class="page">
       <header class="intro">
         <p class="intro-kicker" id="catalogMeta" aria-live="polite"></p>
-        <p class="intro-lede">Edition and content tools for memes, slides, and publishing—video, colors, image work, stock assets, icons, music, and the random tabs worth keeping. Pick a list, search, open in a new tab.</p>
+        <p class="intro-lede">Edition and content tools for memes, slides, and publishing: video, colors, image work, stock assets, icons, music, and the random tabs worth keeping. Pick a list, search, open in a new tab.</p>
       </header>
 
       <div class="toolbar">
@@ -79,7 +79,7 @@
       <div class="catalog-layout">
         <aside class="lists-aside" aria-label="Curated lists">
           <p class="lists-label">Lists</p>
-          <div id="listPills" class="list-pills" role="tablist"></div>
+          <div id="listPills" class="list-pills" role="group" aria-label="Filter sites by list"></div>
           <p id="listHint" class="list-hint" hidden></p>
         </aside>
 
@@ -93,7 +93,7 @@
         <summary>JSON API for editors and the Neorgon hub</summary>
         <p class="api-note">Edit <code>data/sites.json</code>, run <code>make api</code>. Hub cards read <code>/api/v1/catalog.json</code>.</p>
         <ul>
-          <li><a href="api/v1/catalog.json">GET /api/v1/catalog.json</a> — sites, lists, hub metadata</li>
+          <li><a href="api/v1/catalog.json">GET /api/v1/catalog.json</a>: sites, lists, hub metadata</li>
           <li><a href="api/v1/sites.json">GET /api/v1/sites.json</a></li>
           <li><a href="api/v1/lists.json">GET /api/v1/lists.json</a></li>
         </ul>

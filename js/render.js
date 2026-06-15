@@ -9,6 +9,8 @@ function renderListPills() {
   let html =
     '<button type="button" class="list-pill' +
     (allActive ? ' active' : '') +
+    '" aria-pressed="' +
+    (allActive ? 'true' : 'false') +
     '" data-list="">All sites</button>';
   state.lists.forEach((list) => {
     const active = state.activeListId === list.id;
@@ -16,6 +18,8 @@ function renderListPills() {
     html +=
       '<button type="button" class="list-pill' +
       (active ? ' active' : '') +
+      '" aria-pressed="' +
+      (active ? 'true' : 'false') +
       '" data-list="' +
       escHtml(list.id) +
       '">' +
